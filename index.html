@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo3.png">
+    <style>
+
+body{
+  background-color:lavenderblush;
+  color:black;
+  font-family:"Raleway", Helvetica, sans-serif;
+  margin:0;}
+
+.logoicon, .photo1{padding-left: 40px; padding-top:10px;padding-bottom: 10px;}
+
+.container1 {
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+  background-color: white;}
+
+#navbar li{
+  display:inline-block;
+  padding-right:10px;}
+
+#navbar a{
+  text-decoration:none;
+  font-size:20px;
+  padding-right:10px;
+  padding-left:10px;
+  color:#022540;}
+
+#navbar a:hover {background-color: lightslategray; color: white;}
+#navbar a.active {background-color:darkblue; color:lavenderblush;}
+
+.hello {margin-top:50px;text-align:center;}
+
+.column1 {
+  float: left;
+  text-align: left;
+  margin-left:8%;
+  width: 50%;}
+
+.column2 {float:right; margin-right:10%;}
+
+p{font-size:22px;}
+
+.row1:after {
+content: "";
+display: table;
+clear: both; }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white; }
+.fa-instagram {
+  background: #fd5da8;
+  color: white;}
+
+.fa-envelope { background: plum;
+  color: white;}
+
+/* START OF SLIDESHOW */
+* {
+  box-sizing: border-box; 
+}
+
+img {
+  vertical-align: middle; padding-left: 80px; padding-right:80px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 20px;
+  padding: 100px 100px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  margin-left:80px; margin-right:80px;
+  color: white;
+}
+
+.rowS:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columnS {
+  float: left;
+  width: 32%; padding:0%; 
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    </style>
+</head>
+<body>
+<!--how to make navigation hover the entire header; how to make MS stay in left-->
+
+<div id="main-header">
+  <div class="container1">
+    <img src = "images/me.png" class = "logoicon" title = "Maya Sujanto" alt ="photo icon" height="150">
+    <h1 class ="logo" >Maya Sujanto</h1>
+    <nav id="navbar">
+      <ul>
+        <li> <a class="active" href="#">Home</a> </li>
+        <li> <a href="aboutme.html">About Me</a> </li>
+        <li> <a href="portfolio.html">Portfolio</a></li>
+        <li> <a href = "work.html"> Work Experiences</a> </li>
+        <li><a href = "sitemap.html">Sitemap</a> </li>
+        <li> <a href = "contact.html">Contact </a> </li>
+      </ul>
+     </nav>
+  </div>
+</div>
+
+<h1 class = "hello"> Hello, I'm happy you're here! </h1>
+
+<div class="row1">
+    <div class="column1">
+         <h2> I'm Maya Sujanto, a data-driven marketer who builds brands and drives growth. </h2>
+         <p> My experiences working in a Venture Capital and a Unicorn Start-Up honed my agility to thrive in fast-paced environments. On the side, my social entrepeneurial spirit propelled me to build a non-profit for underprivileged children in Indonesia and launch a career fair for undergraduate students. I am passionate about creating work that produces lasting impact –– you can browse to explore my work!
+         </p>
+    </div>
+    <div class="column2">
+     <img src ="images/maya1.JPG" class = "photo1 "title = "Maya Sujanto" alt = "Photo of Maya" height="400"> 
+    </div>
+</div>
+
+
+
+
+
+<h2 style="text-align:center">Snippets of My Work</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="ss/S1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="ss/S2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="ss/S3.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="ss/S4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="ss/S5.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="ss/S6.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="rowS">
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S1.png" style="width:100%" onclick="currentSlide(1)" alt="Snippets of my Work">
+    </div>
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S2.png" style="width:100%" onclick="currentSlide(2)" alt="PERMIAS MASS - Director of Marketing & Public Relations">
+    </div>
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S3.png" style="width:100%" onclick="currentSlide(3)" alt="Marketing Materials for JOKR">
+    </div>
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S4.png" style="width:100%" onclick="currentSlide(4)" alt="Food Startup Founder">
+    </div>
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S5.png" style="width:100%" onclick="currentSlide(5)" alt="Sticker Illustrations">
+    </div>    
+    <div class="columnS">
+      <img class="demo cursor" src="ss/S6.png" style="width:100%" onclick="currentSlide(6)" alt="Let's Work Together!">
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="http://www.linkedin.com/in/mayasujanto" class="fa fa-linkedin"></a>
+  <a href="http://www.instagram.com/mayasujanto" class="fa fa-instagram"></a>
+  <a href="http://mailto:maya.sujanto@gmail.com" class="fa fa-envelope"></a>
+
+</div>
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+      
+      
+</body>
+</html>
