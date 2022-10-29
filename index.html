@@ -9,6 +9,9 @@
     <link rel="icon" type="image/x-icon" href="images/logo3.png">
     <style>
 
+h1 {font-size:40px;}
+h2 {font-size: 33px;}
+
 body{
   background-color:lavenderblush;
   color:black;
@@ -25,11 +28,11 @@ body{
 
 #navbar li{
   display:inline-block;
-  padding-right:10px;}
+  padding-right:30px;}
 
 #navbar a{
   text-decoration:none;
-  font-size:20px;
+  font-size:22px;
   padding-right:10px;
   padding-left:10px;
   color:#022540;}
@@ -47,7 +50,7 @@ body{
 
 .column2 {float:right; margin-right:10%;}
 
-p{font-size:22px;}
+p{font-size:30px;}
 
 .row1:after {
 content: "";
@@ -66,7 +69,7 @@ clear: both; }
 .fa {
   padding: 10px;
   font-size: 30px;
-  width: 30px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -75,6 +78,7 @@ clear: both; }
 .fa-linkedin {
   background: #007bb5;
   color: white; }
+  
 .fa-instagram {
   background: #fd5da8;
   color: white;}
@@ -87,13 +91,13 @@ clear: both; }
   box-sizing: border-box; 
 }
 
-img {
-  vertical-align: middle; padding-left: 80px; padding-right:80px;
+.slide {
+  vertical-align: middle; 
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: relative;
+  position: relative; padding:80px;
 }
 
 /* Hide the images by default */
@@ -103,7 +107,7 @@ img {
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 /* Next & previous buttons */
@@ -125,7 +129,7 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 5%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -139,7 +143,7 @@ img {
 .numbertext {
   color: black;
   font-size: 20px;
-  padding: 100px 100px;
+  padding: 100px 40px;
   position: absolute;
   top: 0;
 }
@@ -147,10 +151,9 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: black;
   padding: 2px 16px;
-  margin-left:80px; margin-right:80px;
-  color: white;
+  color: pink;
 }
 
 .rowS:after {
@@ -162,7 +165,7 @@ img {
 /* Six columns side by side */
 .columnS {
   float: left;
-  width: 32%; padding:0%; 
+  width: 16.6%; 
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -177,12 +180,11 @@ img {
     </style>
 </head>
 <body>
-<!--how to make navigation hover the entire header; how to make MS stay in left-->
+<!--how to make navigation hover the entire header!-->
 
 <div id="main-header">
   <div class="container1">
     <img src = "images/me.png" class = "logoicon" title = "Maya Sujanto" alt ="photo icon" height="150">
-    <h1 class ="logo" >Maya Sujanto</h1>
     <nav id="navbar">
       <ul>
         <li> <a class="active" href="#">Home</a> </li>
@@ -212,38 +214,35 @@ img {
 
 
 
-
-<h2 style="text-align:center">Snippets of My Work</h2>
-
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-    <img src="ss/S1.png" style="width:100%">
+    <img src="ss/S1.png" class = "slide" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="ss/S2.png" style="width:100%">
+    <img src="ss/S2.png" class = "slide" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-    <img src="ss/S3.png" style="width:100%">
+    <img src="ss/S3.png" class = "slide" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-    <img src="ss/S4.png" style="width:100%">
+    <img src="ss/S4.png" class = "slide" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-    <img src="ss/S5.png" style="width:100%">
+    <img src="ss/S5.png" class = "slide" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-    <img src="ss/S6.png" style="width:100%">
+    <img src="ss/S6.png" class = "slide" style="width:100%">
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -275,13 +274,13 @@ img {
   </div>
 </div>
 
-<div class="footer">
+<!--<div class="footer">
   <a href="http://www.linkedin.com/in/mayasujanto" class="fa fa-linkedin"></a>
   <a href="http://www.instagram.com/mayasujanto" class="fa fa-instagram"></a>
   <a href="http://mailto:maya.sujanto@gmail.com" class="fa fa-envelope"></a>
 
 </div>
-
+-->
 
 <script>
   let slideIndex = 1;

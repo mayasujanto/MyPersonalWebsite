@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo3.png">
+
+<style>
+    body{
+  background-color:lavenderblush;
+  color:black;
+  font-family:"Raleway", Helvetica, sans-serif;
+  margin:0;}
+
+.logoicon {padding-left: 40px; padding-top:10px;padding-bottom:10px;}
+
+.container1 {
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+  background-color: white;}
+
+#navbar li{
+  display:inline-block;
+  padding-right:30px;}
+
+#navbar a{
+  text-decoration:none;
+  font-size:22px;
+  padding-right:10px;
+  padding-left:10px;
+  color:#022540;}
+
+#navbar a:hover {background-color: lightslategray; color: white;}
+#navbar a.active {background-color:darkblue; color:lavenderblush;}
+
+
+      h1 {font-family: Arial; text-align:center;}
+      fieldset{ background-color: white; border-color: lightgray; border-width: 1px;}
+
+form {background-color: white; }
+
+input { 
+  margin: 1em;}
+
+.title {font-weight:bold;}
+
+</style>
+</head>
+
+<div id="main-header">
+    <div class="container1">
+      <img src = "images/me.png" class = "logoicon" title = "Maya Sujanto" alt ="photo icon" height="150">
+      <nav id="navbar">
+        <ul>
+          <li> <a href="home.html">Home</a> </li>
+          <li> <a href="aboutme.html">About Me</a> </li>
+          <li> <a href="portfolio.html">Portfolio</a></li>
+          <li> <a href = "work.html"> Work Experiences</a> </li>
+          <li><a href = "sitemap.html">Sitemap</a> </li>
+          <li> <a class="active" href="#">Contact</a> </li>
+        </ul>
+       </nav>
+    </div>
+  </div>
+
+
+
+  <h1>Let's Connect!</h1>
+
+  <div class ="background">
+  <fieldset>
+       <form method ="post" action="https://oim-apis.herokuapp.com/form">
+              <fieldset>
+                <legend class = "title">What is your:</legend>
+                <div>
+                  <label for="name">Name: </label>
+                  <input type="text" id="name" name="name"
+                  maxlength="100"
+                  placeholder="Enter your name here"  />
+                </div>
+                
+                <label for="email">Email:</label>
+                <input 
+                type ="text"
+                id="email"
+                name="email"
+                maxlength="100"
+                placeholder="Enter your email here"  />
+          
+              <div>
+              <label for="subject">Subject:</label>
+              <input list="subject" name="subject" id="subject"/>
+              <datalist id="subject">
+              <option value="Work"></option>
+              <option value="Personal"></option>
+              </datalist>
+
+              <div>
+                <label for="message">Message:</label>
+            </div>
+            <div>
+                <textarea
+                id="message"
+                name="message"
+                rows="10"
+                cols="40"
+                ></textarea>
+            </div>
+
+                </div>
+  
+              </fieldset>
+           </form>
+  
+           <form method ="post" action="https://oim-apis.herokuapp.com/form">
+              <fieldset>
+                <legend class = "title">Nice seeing you here!</legend>
+  
+                <div> 
+                  <label for="product-select">Why did you visit?</label>
+              <select name="product-select" id="product-select">
+                  <option value="Work">Work</option>
+                  <option value="Personal">Personal</option>
+                  <option value="Link">Clicked on a Link</option>
+              </select>
+              
+            </div>
+            <div>
+              Which page caught your attention?
+              </div>
+  
+               <div>
+              <input type="radio" name="home" value="home" id="home"/>
+              <label for ="home">Home</label>
+  
+              <input type="radio" name="aboutme" value="aboutme" id="aboutme"/>
+              <label for ="aboutme">About Me</label>
+  
+              <input type="radio" name="portfolio" value="portfolio" id="portfolio"/>
+              <label for ="portfolio">Portfolio</label>
+
+              <input type="radio" name="experiences" value="experiences" id="experiences"/>
+              <label for ="experiences">Work Experiences</label>
+
+              <input type="radio" name="sitemap" value="sitemap" id="sitemap"/>
+              <label for ="sitemap">Site Map</label>
+            </div>
+  
+              <div>
+                  <label for="comments">Comments:</label>
+              </div>
+              <div>
+                  <textarea
+                  id="comments"
+                  name="comments"
+                  rows="5"
+                  cols="40"
+                  ></textarea>
+              </div>
+  
+              <div>
+                <input type="checkbox" id="signup" name="signup" value="signup" checked />
+                <label for ="signup">Sign me up for email updates</label>
+            </div>
+  
+          <div>
+          <input type ="submit" value="Submit"/>
+          <input type ="reset" value="Reset"/>
+          </div>
+  
+              </fieldset>
+           </form> 
+  
+  </fieldset>
+      </div>  
+
+<body>
+    
+</body>
+</html>
