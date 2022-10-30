@@ -40,16 +40,46 @@
       h1 {font-family: Arial; text-align:center;}
       fieldset{ background-color: white; border-color: lightgray; border-width: 1px;}
 
-form {background-color: white; }
+form, .product-select {background-color: white;font-size:20px; }
+
 
 input { 
-  margin: 1em;}
+  margin: 1.1em; font-size:20px;}
 
 .title {font-weight:bold;}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+margin-bottom: 20px;
+margin-top:20px;} 
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white; }
+  
+.fa-instagram {
+  background: #fd5da8;
+  color: white;}
+
+.fa-envelope { background: plum;
+  color: white;}
 
 </style>
 </head>
 
+<body>
 <div id="main-header">
     <div class="container1">
       <img src = "images/me.png" class = "logoicon" title = "Maya Sujanto" alt ="photo icon" height="150">
@@ -115,19 +145,19 @@ input {
               </fieldset>
            </form>
   
-           <form method ="post" action="https://oim-apis.herokuapp.com/form">
+           <form method ="post" action="">
               <fieldset>
                 <legend class = "title">Nice seeing you here!</legend>
   
                 <div> 
                   <label for="product-select">Why did you visit?</label>
-              <select name="product-select" id="product-select">
+              <select name="product-select" id="product-select" class="product-select">
                   <option value="Work">Work</option>
                   <option value="Personal">Personal</option>
                   <option value="Link">Clicked on a Link</option>
               </select>
-              
-            </div>
+              </div>
+
             <div>
               Which page caught your attention?
               </div>
@@ -177,7 +207,11 @@ input {
   </fieldset>
       </div>  
 
-<body>
+      <footer>
+        <a href="http://www.linkedin.com/in/mayasujanto" class="fa fa-linkedin"></a>
+        <a href="http://www.instagram.com/mayasujanto" class="fa fa-instagram"></a>
+        <a href="http://mailto:maya.sujanto@gmail.com" class="fa fa-envelope"></a>
+      </footer> 
     
 </body>
 </html>
