@@ -10,9 +10,25 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo3.png">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5LJVDG3');</script>
+  <!-- End Google Tag Manager -->
+
     <style>
 
-h1 {font-size:40px;}
+#second-header {margin-top: 40px; text-align: center; margin-bottom: 30px;}
+
+h1 {display:flex; color: #8B0000; font-size:50px; display: inline; padding: 0; border-right: 4px solid black;
+animation: blink 1s infinite; padding-right:8px;}
+
+@keyframes blink {
+  50% { border-right:none;}
+}
+
 h2 {font-size: 33px;}
 
 body{
@@ -42,8 +58,6 @@ body{
 
 #navbar a:hover {background-color: lightslategray; color: white;}
 #navbar a.active {background-color:darkblue; color:lavenderblush;}
-
-.hello {margin-top:50px;text-align:center;}
 
 .column1 {
   float: left;
@@ -181,6 +195,12 @@ margin-bottom: 20px;}
     </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LJVDG3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
 <!--how to make navigation hover the entire header!-->
 
 <div id="main-header">
@@ -199,7 +219,9 @@ margin-bottom: 20px;}
   </div>
 </div>
 
-<h1 class = "hello"> Hello, I'm happy you're here! </h1>
+<div id="second-header">
+<h1 class = "hello"> </h1>
+</div>
 
 <div class="row1">
     <div class="column1">
@@ -211,8 +233,6 @@ margin-bottom: 20px;}
      <img src ="images/maya1.JPG" class = "photo1" title = "Maya Sujanto" alt = "Photo of Maya" height="400"> 
     </div>
 </div>
-
-
 
 
 <div class="container">
@@ -283,6 +303,18 @@ margin-bottom: 20px;}
 
 
 <script>
+
+  let x=0;
+  let text = document.getElementsByClassName("hello");
+  let speed = 150;
+  let txt= "Hello, I'm happy you're here!"
+  function hello (){
+    document.querySelector("h1").innerHTML += txt.charAt(x);
+    x++;
+    setTimeout(hello, speed);
+  }
+  hello();
+  
   let slideIndex = 1;
   showSlides(slideIndex);
   
