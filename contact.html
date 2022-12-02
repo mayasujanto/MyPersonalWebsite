@@ -10,7 +10,13 @@
     <title>Contact Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo3.png">
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5LJVDG3');</script>
+  <!-- End Google Tag Manager -->
 <style>
     body{
   background-color:lavenderblush;
@@ -84,6 +90,11 @@ margin-top:20px;}
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LJVDG3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 <div id="main-header">
     <div class="container1">
       <img src = "images/me.png" class = "logoicon" title = "Maya Sujanto" alt ="photo icon" height="150">
@@ -167,19 +178,19 @@ margin-top:20px;}
               </div>
   
                <div>
-              <input type="radio" name="home" value="home" id="home"/>
+              <input class="check" type="radio" name="home" value="home" id="home"/>
               <label for ="home">Home</label>
   
-              <input type="radio" name="aboutme" value="aboutme" id="aboutme"/>
+              <input class="check" type="radio" name="aboutme" value="aboutme" id="aboutme"/>
               <label for ="aboutme">About Me</label>
   
-              <input type="radio" name="portfolio" value="portfolio" id="portfolio"/>
+              <input class="check" type="radio" name="portfolio" value="portfolio" id="portfolio"/>
               <label for ="portfolio">Portfolio</label>
 
-              <input type="radio" name="experiences" value="experiences" id="experiences"/>
+              <input class="check" type="radio" name="experiences" value="experiences" id="experiences"/>
               <label for ="experiences">Work Experiences</label>
 
-              <input type="radio" name="sitemap" value="sitemap" id="sitemap"/>
+              <input class="check"  type="radio" name="sitemap" value="sitemap" id="sitemap"/>
               <label for ="sitemap">Site Map</label>
             </div>
   
@@ -201,7 +212,7 @@ margin-top:20px;}
             </div>
   
           <div>
-          <input type ="submit" value="Submit"/>
+          <input type ="submit" value="Submit" id="submit-btn"/>
           <input type ="reset" value="Reset"/>
           </div>
   
@@ -217,5 +228,21 @@ margin-top:20px;}
         <a href="http://mailto:maya.sujanto@gmail.com" class="fa fa-envelope"></a>
       </footer> 
     
+    <script>
+
+      function display(){
+        let myForm = document.querySelector("form");
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let message = document.getElementById("message");
+        let subject = document.getElementById("subject");
+      
+      if (name.value.length == 0 || email.value.length == 0 || message.value.length == 0 || subject.value.length == 0){
+        alert("Hi! Please finish the form :)");
+      }}
+
+      document.querySelector("#submit-btn").onclick = display;
+
+    </script>
 </body>
 </html>
