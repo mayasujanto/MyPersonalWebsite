@@ -49,7 +49,7 @@ body{
 #navbar a:hover {background-color: lightslategray; color: white;}
 #navbar a.active {background-color:darkblue; color:lavenderblush;}
 
-/* start of portfolio style*/
+/* start of portfolio images style*/
 * {
   box-sizing: border-box;
 }
@@ -314,12 +314,12 @@ margin-bottom: 20px;}
       x = document.getElementsByClassName("column");
       if (c == "all") c = "";
       for (i = 0; i < x.length; i++) {
-        RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+        removeClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
       }
     }
     
-    function AddClass(element, name) {
+    function addClass(element, name) {
       let i, arr1, arr2;
       arr1 = element.className.split(" ");
       arr2 = name.split(" ");
@@ -328,7 +328,7 @@ margin-bottom: 20px;}
       }
     }
     
-    function RemoveClass(element, name) {
+    function removeClass(element, name) {
       let i, arr1, arr2;
       arr1 = element.className.split(" ");
       arr2 = name.split(" ");
@@ -346,7 +346,7 @@ margin-bottom: 20px;}
     let btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
+        var current = document.getElementsByClassName("btn active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
       });

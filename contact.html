@@ -18,7 +18,7 @@
   })(window,document,'script','dataLayer','GTM-5LJVDG3');</script>
   <!-- End Google Tag Manager -->
 <style>
-    body{
+body{
   background-color:lavenderblush;
   color:black;
   font-family:"Raleway", Helvetica, sans-serif;
@@ -47,8 +47,8 @@
 #navbar a.active {background-color:darkblue; color:lavenderblush;}
 
 
-      h1 {font-family: Arial; text-align:center;}
-      fieldset{ background-color: white; border-color: lightgray; border-width: 1px;}
+ h1 {font-family: Arial; text-align:center;}
+ fieldset{ background-color: white; border-color: lightgray; border-width: 1px; margin-left: 20px; margin-right: 20px;}
 
 form, .product-select {background-color: white;font-size:20px; }
 
@@ -56,15 +56,17 @@ form, .product-select {background-color: white;font-size:20px; }
 input { 
   margin: 1.1em; font-size:20px;}
 
-.title {font-weight:bold;}
+.input2 {padding-bottom:1.1em; padding-top: 1.1em;}
+
+.title {font-weight:bold; font-size:30px;}
 
 footer {
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
-margin-bottom: 20px;
-margin-top:20px;} 
+  margin-bottom: 20px;
+  margin-top:20px;} 
 
 .fa {
   padding: 10px;
@@ -151,7 +153,7 @@ margin-top:20px;}
                 id="message"
                 name="message"
                 rows="10"
-                cols="40"
+                cols="80"
                 ></textarea>
             </div>
 
@@ -163,17 +165,19 @@ margin-top:20px;}
            <form method ="post" action="">
               <fieldset>
                 <legend class = "title">Nice seeing you here!</legend>
-  
-                <div> 
+              
+        
+                
+              <div class = "input2">
                   <label for="product-select">Why did you visit?</label>
               <select name="product-select" id="product-select" class="product-select">
                   <option value="Work">Work</option>
                   <option value="Personal">Personal</option>
                   <option value="Link">Clicked on a Link</option>
               </select>
-              </div>
+             </div>
 
-            <div>
+              <div class = "input2">
               Which page caught your attention?
               </div>
   
@@ -194,7 +198,7 @@ margin-top:20px;}
               <label for ="sitemap">Site Map</label>
             </div>
   
-              <div>
+            <div class = "input2">
                   <label for="comments">Comments:</label>
               </div>
               <div>
@@ -202,7 +206,7 @@ margin-top:20px;}
                   id="comments"
                   name="comments"
                   rows="5"
-                  cols="40"
+                  cols="80"
                   ></textarea>
               </div>
   
@@ -215,12 +219,12 @@ margin-top:20px;}
           <input type ="submit" value="Submit" id="submit-btn"/>
           <input type ="reset" value="Reset"/>
           </div>
-  
+        </div>
               </fieldset>
            </form> 
   
   </fieldset>
-      </div>  
+      
 
       <footer>
         <a href="http://www.linkedin.com/in/mayasujanto" class="fa fa-linkedin"></a>

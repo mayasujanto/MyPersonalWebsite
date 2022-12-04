@@ -74,6 +74,13 @@ content: "";
 display: table;
 clear: both; }
 
+<!--image change-->
+
+.visible {display:block;}
+
+.hidden {display:none;}
+
+
 footer {
   left: 0;
   bottom: 0;
@@ -230,7 +237,10 @@ margin-bottom: 20px;}
          </p>
     </div>
     <div class="column2">
-     <img src ="images/maya1.JPG" class = "photo1" title = "Maya Sujanto" alt = "Photo of Maya" height="400"> 
+     <img src ="images/1.png" id ="img1" class = "visible" title = "Maya Sujanto" alt = "Photo of Maya" height="500"> 
+     <img src ="images/2.png" id ="img2" class = "hidden" title = "Maya Sujanto" alt = "Photo of Maya" height="500"> 
+     <img src ="images/3.png" id ="img3" class = "hidden" title = "Maya Sujanto" alt = "Photo of Maya" height="500"> 
+     <img src ="images/4.png" id ="img4" class = "hidden" title = "Maya Sujanto" alt = "Photo of Maya" height="500"> 
     </div>
 </div>
 
@@ -303,6 +313,26 @@ margin-bottom: 20px;}
 
 
 <script>
+
+  let activeImageId = 1;
+  let nextImageId = 1;
+
+  setInterval(function(){
+    nextImageId = nextImageId + 1;
+
+    if (nextImageId < 4) {
+      document.getElementById ("img" +activeImageId).classList.replace("visible", "hidden");
+      document.getElementById ("img" +nextImageId).classList.replace("hidden", "visible");
+      activeImageId = nextImageId;
+    } else{
+      document.getElementById("img" +activeImageId ).classList.replace("visible", "hidden");
+      document.getElementById("img" +nextImageId ).classList.replace("hidden", "visible");
+    
+      activeImageId = 4;
+      nextImageId = 0;
+    }
+  }, 1000);
+
 
   let x=0;
   let text = document.getElementsByClassName("hello");
