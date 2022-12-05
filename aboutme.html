@@ -12,7 +12,10 @@
     <link rel="icon" type="image/x-icon" href="images/logo3.png">
 
 <style>
-    body{
+
+html {overflow-x: hidden;}
+
+  body{
   background-color:lavenderblush;
   color:black;
   font-family:"Raleway", Helvetica, sans-serif;
@@ -52,7 +55,7 @@
   margin-left:8%;
   width: 100%;}
 
-.column2 {float:left; margin-right:10%; font-size: 30px; text-align:left; margin-left:10px;}
+.column2 {float:left; margin-right:10%; font-size: 30px; text-align:left; margin-left:30px;}
 
 .row1 {
   padding: 30px 80px;
@@ -113,7 +116,7 @@ margin-top: 20px;}
       <img src ="aboutme/1.png" class = "photo1" title = "It's nice to meet you!" alt = "It's nice to Meet You!">
 
 
-    <p class = "intro"> Hi! I am <strong>Maya Sujanto</strong>, a Senior in Babson College graduating in May 2023. I have a background in Business Analytics, Entrepeneurship, and Marketing – but my passion for learning has propelled me to own a diverse set of experiences and skillsets.</p>
+    <p class = "intro"> Hi! I am <strong>Maya Sujanto</strong>, a Senior in Babson College graduating in May 2023. I have a background in Business Analytics, Entrepeneurship, and Marketing – but my passion for learning has propelled me to own a diverse set of experiences and skillsets.</p>
       
       <div class = "clear"></div>
 
@@ -125,7 +128,7 @@ margin-top: 20px;}
 
     <div class="row1">
       <div class="column1">
-      <img src="images/maya2.jpg" class = "photo2" title = "Maya Sujanto" alt = "Maya Sujanto" height="600" >
+      <img src="images/maya4.png" id = "photo2" class = "photo2" title = "Maya Sujanto" alt = "Maya Sujanto" height="600" >
       </div>
       <div class="column2">
         <h4> An unwavering optimist and social chameleon who enjoys vibrant conversations! </h4>
@@ -139,6 +142,39 @@ margin-top: 20px;}
   <a href="http://www.instagram.com/mayasujanto" class="fa fa-instagram"></a>
   <a href="http://mailto:maya.sujanto@gmail.com" class="fa fa-envelope"></a>
 </footer> 
+
+<script>
+
+  let img = document.getElementById("photo2");
+
+      function enlarge(x) {
+        let i = document.getElementById("photo2");
+        let w = i.width
+        w = w * 1.25;
+        let h = i.height
+        h = h * 1.25;
+        i.width = w;
+        i.height = h;
+      }
+
+      function shrink(x) {
+        let i = document.getElementById("photo2");
+        let w = i.width;
+        w = w / 1.25;
+        i.width = w;
+        let h = i.height
+        h = h / 1.25;
+        i.height = h;} 
+
+       img.addEventListener("mouseover", function () {
+          enlarge(this.id);
+        });
+        img.addEventListener("mouseout", function () {
+          shrink(this.id);
+        });
+
+</script>
+
 
 </body>
 </html>
